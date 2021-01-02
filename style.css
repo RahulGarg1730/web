@@ -1,0 +1,93 @@
+.fa-bars:before{content:"\f0c9"}
+body{
+    background-image : url('images/julian-yu-_WuPjE-MPHo-unsplash.jpg');
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-blend-mode:inherit; 
+    
+}
+nav{
+    background: rgba(126, 131, 131, 0.281);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+label.logo{
+    color: white;
+    font-size: 8vh;
+    padding-left: 3vw; 
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    padding-right: 2.5vw;
+}
+nav ul li{
+    display: inline-block;
+    
+    border-radius: 20px;
+    padding: 10px;
+    background-color: khaki;
+    margin-left: 2px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 2.5vh;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 5vh;
+    float: left;
+    padding-left: 3vw;
+    padding-top: 2.4vh;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:876px){
+    .logo{
+        margin-left: 20vw;
+    }
+    .checkbtn{
+        display: initial;
+    }
+    nav ul{
+        list-style: none;
+        position:absolute;
+        background: #2c3e50;
+        display: block;
+        width:80%;
+        float:initial;
+        padding-right: 0vw;
+        padding-inline-start: 0px;
+        transition:all 1s;
+        left: -100%;
+
+    }
+    nav ul li{
+        display: block;
+        border-radius: 0px;
+        padding: 10px;
+        background-color: rgba(126, 131, 131, 0);
+        margin-left: 0px;
+        text-align: center;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color:black;
+        font-size: 2.5vh;        
+    }   
+    a:hover, nav ul li:hover{
+        background-color: lightblue;
+    }
+}
